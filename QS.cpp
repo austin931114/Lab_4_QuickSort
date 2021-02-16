@@ -1,4 +1,5 @@
 #include <iostream>
+#include <sstream>
 #include <string>
 #include "QS.h"
 using namespace std;
@@ -86,20 +87,25 @@ using namespace std;
 	*/
 	string QS::getArray() const {
 		string temp = "";
-		string arrayValue = "";
-		string comma = ",";
+
+		if (myArray == NULL) {
+			return temp;
+		}
+
+		stringstream ss;
 
 		for (int i = 0; i < valueSize; ++i) {
-			if(i == valueSize - 1) {
-				arrayValue = myArray[i];
-				temp.append(arrayValue);
+			if(i == (valueSize - 1)) {
+				ss << myArray[i];
+				// temp.append(arrayValue);
 				break;
 			}
-			arrayValue = myArray[i];
-			temp.append(arrayValue);
-			temp.append(comma);
+			ss << myArray[i] << ",";
 			}
-
+		
+		temp = ss.str();
+		cout << temp;
+		
 		return temp;
 	}
 
@@ -121,14 +127,16 @@ using namespace std;
 	* returns true if a value was added, false otherwise.
 	*/
 	bool QS::addToArray(int value) {
-		if (myArray == NULL) {
+		if (valueSize == myArrayLength) {
 			return false;
 		}
-		if (valueSize != myArrayLength) {
-			myArray[valueSize] = value;
-			valueSize++;
-			return true;
-		}		
+		if (myArray != NULL) {
+				myArray[valueSize] = value;
+				// cout << "haha" << myArray[valueSize] << endl;
+				valueSize++;
+		}
+
+				return true;
 	}
 
 	/*
@@ -147,20 +155,16 @@ using namespace std;
 		}
 
 		myArrayLength = capacity;
+		// cout << "array length" << myArrayLength << endl;
 
-		if(myArray != 0) {
-			delete [] myArray;
-			myArray = new int[capacity];
+		delete [] myArray;
+		myArray = new int[capacity];
 
-			for (int i = 0; i < myArrayLength; ++i) {
-				myArray[i] = -9999;
-			}
-
-			return true;
+		for (int i = 0; i < myArrayLength; ++i) {
+			myArray[i] = -9999;
 		}
 
-
-		
+	return true;
 	}
 
 	/*
@@ -174,6 +178,7 @@ using namespace std;
 		delete [] myArray;
 		myArray = 0;
 
+		valueSize = 0;
 
 		return;
 	}

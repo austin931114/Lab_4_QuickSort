@@ -1,134 +1,134 @@
-createArray 20 False
-addToArray 9 False
-addToArray 8 False
-addToArray 7 False
-addToArray 6 False
-addToArray 5 False
-addToArray 4 False
-addToArray 3 False
-addToArray 2 False
-addToArray 1 False
-addToArray 0 False
+createArray 20 True
+addToArray 9 True
+addToArray 8 True
+addToArray 7 True
+addToArray 6 True
+addToArray 5 True
+addToArray 4 True
+addToArray 3 True
+addToArray 2 True
+addToArray 1 True
+addToArray 0 True
 getArray
  
 sortAll
 getArray
  
-createArray 20 False
-addToArray 9 False
-addToArray 8 False
-addToArray 7 False
-addToArray 6 False
-addToArray 5 False
-addToArray 4 False
-addToArray 3 False
-addToArray 2 False
-addToArray 1 False
-addToArray 0 False
-addToArray 9 False
-addToArray 8 False
-addToArray 7 False
-addToArray 6 False
-addToArray 5 False
-addToArray 4 False
-addToArray 3 False
-addToArray 2 False
-addToArray 1 False
-addToArray 0 False
+createArray 20 True
+addToArray 9 True
+addToArray 8 True
+addToArray 7 True
+addToArray 6 True
+addToArray 5 True
+addToArray 4 True
+addToArray 3 True
+addToArray 2 True
+addToArray 1 True
+addToArray 0 True
+addToArray 9 True
+addToArray 8 True
+addToArray 7 True
+addToArray 6 True
+addToArray 5 True
+addToArray 4 True
+addToArray 3 True
+addToArray 2 True
+addToArray 1 True
+addToArray 0 True
 getArray
  
 sortAll
 getArray
  
-createArray 20 False
-addToArray 0 False
-addToArray 0 False
-addToArray 0 False
-addToArray 0 False
-addToArray 0 False
-addToArray -1 False
-addToArray 0 False
-addToArray 0 False
-addToArray 0 False
-addToArray 0 False
-addToArray 1 False
-addToArray 0 False
-addToArray 0 False
-addToArray 0 False
-addToArray 0 False
-addToArray 1 False
-addToArray 0 False
-addToArray 0 False
-addToArray -1 False
-addToArray 0 False
+createArray 20 True
+addToArray 0 True
+addToArray 0 True
+addToArray 0 True
+addToArray 0 True
+addToArray 0 True
+addToArray -1 True
+addToArray 0 True
+addToArray 0 True
+addToArray 0 True
+addToArray 0 True
+addToArray 1 True
+addToArray 0 True
+addToArray 0 True
+addToArray 0 True
+addToArray 0 True
+addToArray 1 True
+addToArray 0 True
+addToArray 0 True
+addToArray -1 True
+addToArray 0 True
 getArray
  
 sortAll
 getArray
  
-createArray 30 False
-addToArray 30 False
-addToArray 29 False
-addToArray 28 False
-addToArray 27 False
-addToArray 26 False
-addToArray 25 False
-addToArray 24 False
-addToArray 23 False
-addToArray 22 False
-addToArray 21 False
-addToArray 20 False
-addToArray 19 False
-addToArray 18 False
-addToArray 17 False
-addToArray 16 False
-addToArray 15 False
-addToArray 14 False
-addToArray 13 False
-addToArray 12 False
-addToArray 11 False
-addToArray 10 False
-addToArray 9 False
-addToArray 8 False
-addToArray 7 False
-addToArray 6 False
-addToArray 5 False
-addToArray 4 False
-addToArray 3 False
-addToArray 2 False
-addToArray 1 False
+createArray 30 True
+addToArray 30 True
+addToArray 29 True
+addToArray 28 True
+addToArray 27 True
+addToArray 26 True
+addToArray 25 True
+addToArray 24 True
+addToArray 23 True
+addToArray 22 True
+addToArray 21 True
+addToArray 20 True
+addToArray 19 True
+addToArray 18 True
+addToArray 17 True
+addToArray 16 True
+addToArray 15 True
+addToArray 14 True
+addToArray 13 True
+addToArray 12 True
+addToArray 11 True
+addToArray 10 True
+addToArray 9 True
+addToArray 8 True
+addToArray 7 True
+addToArray 6 True
+addToArray 5 True
+addToArray 4 True
+addToArray 3 True
+addToArray 2 True
+addToArray 1 True
 getArray
  
 sortAll
 getArray
  
-createArray 10 False
-addToArray 1  False
-addToArray 2 False
-addToArray 3 False
-addToArray 4 False
-addToArray 1 False
-addToArray 5 False
-addToArray 6 False
-addToArray 7 False
-addToArray 8 False
-addToArray 9 False
+createArray 10 True
+addToArray 1  True
+addToArray 2 True
+addToArray 3 True
+addToArray 4 True
+addToArray 1 True
+addToArray 5 True
+addToArray 6 True
+addToArray 7 True
+addToArray 8 True
+addToArray 9 True
 getArray
  
 sortAll
 getArray
  
-createArray 10 False
-addToArray 4 False
-addToArray 6 False
-addToArray 2 False
-addToArray 1 False
-addToArray 9 False
-addToArray 5 False
-addToArray 3 False
-addToArray 8 False
-addToArray 7 False
-addToArray 9 False
+createArray 10 True
+addToArray 4 True
+addToArray 6 True
+addToArray 2 True
+addToArray 1 True
+addToArray 9 True
+addToArray 5 True
+addToArray 3 True
+addToArray 8 True
+addToArray 7 True
+addToArray 9 True
 getArray
  
 sortAll
