@@ -41,9 +41,36 @@ using namespace std;
 	* @return
 	*		the index of the pivot (middle index); -1 if provided with invalid input
 	*/
-	int QS::medianOfThree(int left, int right)
-	{
-		return 0;
+	int QS::medianOfThree(int left, int right) {
+		if (left >= right) {
+			return -1;
+		}
+		int middle;
+		middle = (left + right)/2;
+
+		if (myArray[left] > myArray[middle]) {
+			int temp;
+			temp = myArray[left];
+			myArray[left] = myArray[middle];
+			myArray[middle] = temp;
+			// cout << left << middle << " next ";
+		}
+		if (myArray[right] < myArray[middle]) {
+			int temp1;
+			temp1 = myArray[right];
+			myArray[right] = myArray[middle];
+			myArray[middle] = temp1;
+			// cout << myArray[right] << myArray[middle] << " next ";
+		}
+		if (myArray[middle] < myArray[left]) {
+			int temp2;
+			temp2 = myArray[left];
+			myArray[left] = myArray[middle];
+			myArray[middle] = temp2;
+			// cout << left << middle << " next ";
+		}
+
+		return middle;
 	}
 
 	/*
@@ -104,7 +131,7 @@ using namespace std;
 			}
 		
 		temp = ss.str();
-		cout << temp;
+		// cout << temp;
 		
 		return temp;
 	}
@@ -159,6 +186,7 @@ using namespace std;
 
 		delete [] myArray;
 		myArray = new int[capacity];
+		valueSize = 0;
 
 		for (int i = 0; i < myArrayLength; ++i) {
 			myArray[i] = -9999;

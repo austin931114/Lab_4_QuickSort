@@ -6,64 +6,64 @@ addToArray -5 True
 addToArray -10 True
 getArray
  10,5,0,-5,-10
-medianOfThree 0 4 0
+medianOfThree 0 4 2
 getArray
- 10,5,0,-5,-10
-medianOfThree 0 0 0
+ -10,5,0,-5,10
+medianOfThree 0 0 -1
 getArray
- 10,5,0,-5,-10
-medianOfThree 0 2 0
+ -10,5,0,-5,10
+medianOfThree 0 2 1
 getArray
- 10,5,0,-5,-10
-medianOfThree 1 3 0
+ -10,0,5,-5,10
+medianOfThree 1 3 2
 getArray
- 10,5,0,-5,-10
+ -10,-5,0,5,10
 createArray 10 True
 getArray
- -9999,-9999,-9999,-9999,-9999
+ 
 addToArray 10 True
 addToArray 9 True
 addToArray 8 True
 addToArray 7 True
 addToArray 6 True
-addToArray 5 False
-addToArray 4 False
-addToArray 3 False
-addToArray 2 False
-addToArray 1 False
+addToArray 5 True
+addToArray 4 True
+addToArray 3 True
+addToArray 2 True
+addToArray 1 True
 getArray
- -9999,-9999,-9999,-9999,-9999,10,9,8,7,6
-medianOfThree 0 9 0
+ 10,9,8,7,6,5,4,3,2,1
+medianOfThree 0 9 4
 getArray
- -9999,-9999,-9999,-9999,-9999,10,9,8,7,6
-medianOfThree 0 2 0
+ 1,9,8,7,6,5,4,3,2,10
+medianOfThree 0 2 1
 getArray
- -9999,-9999,-9999,-9999,-9999,10,9,8,7,6
-medianOfThree 2 4 0
+ 1,8,9,7,6,5,4,3,2,10
+medianOfThree 2 4 3
 getArray
- -9999,-9999,-9999,-9999,-9999,10,9,8,7,6
-medianOfThree 4 6 0
+ 1,8,6,7,9,5,4,3,2,10
+medianOfThree 4 6 5
 getArray
- -9999,-9999,-9999,-9999,-9999,10,9,8,7,6
-medianOfThree 6 8 0
+ 1,8,6,7,4,5,9,3,2,10
+medianOfThree 6 8 7
 getArray
- -9999,-9999,-9999,-9999,-9999,10,9,8,7,6
+ 1,8,6,7,4,5,2,3,9,10
 createArray 4 True
 addToArray 2 True
 addToArray 1 True
 addToArray 1 True
 addToArray 1 True
 getArray
- -9999,-9999,-9999,-9999,-65480,0,49,0,1098147175,2036429426,824211712,0,1,1
-medianOfThree 1 3 0
+ 2,1,1,1
+medianOfThree 1 3 2
 getArray
- -9999,-9999,-9999,-9999,-65480,0,49,0,1098147175,2036429426,1701996544,540090469,51,1
-medianOfThree 0 2 0
+ 2,1,1,1
+medianOfThree 0 2 1
 getArray 
- -9999,-9999,-9999,-9999,-65480,0,49,0,1098147175,2036429426,1701969952,540024933,50,1
-medianOfThree 0 3 0
+ 1,1,2,1
+medianOfThree 0 3 1
 getArray
- -9999,-9999,-9999,-9999,-65480,0,49,0,1098147175,2036429426,1701996544,540024933,51,1
-medianOfThree 1 3 0
+ 1,1,2,1
+medianOfThree 1 3 2
 getArray
- -9999,-9999,-9999,-9999,-65480,0,49,0,1098147175,2036429426,1701996544,540090469,51,1
+ 1,1,1,2
