@@ -1,0 +1,69 @@
+createArray 5 False
+addToArray 10 False
+addToArray 5 False
+addToArray 0 False
+addToArray -5 False
+addToArray -10 False
+getArray
+ 
+medianOfThree 0 4 0
+getArray
+ 
+medianOfThree 0 0 0
+getArray
+ 
+medianOfThree 0 2 0
+getArray
+ 
+medianOfThree 1 3 0
+getArray
+ 
+createArray 10 False
+getArray
+ 
+addToArray 10 False
+addToArray 9 False
+addToArray 8 False
+addToArray 7 False
+addToArray 6 False
+addToArray 5 False
+addToArray 4 False
+addToArray 3 False
+addToArray 2 False
+addToArray 1 False
+getArray
+ 
+medianOfThree 0 9 0
+getArray
+ 
+medianOfThree 0 2 0
+getArray
+ 
+medianOfThree 2 4 0
+getArray
+ 
+medianOfThree 4 6 0
+getArray
+ 
+medianOfThree 6 8 0
+getArray
+ 
+createArray 4 False
+addToArray 2 False
+addToArray 1 False
+addToArray 1 False
+addToArray 1 False
+getArray
+ 
+medianOfThree 1 3 0
+getArray
+ 
+medianOfThree 0 2 0
+getArray 
+ 
+medianOfThree 0 3 0
+getArray
+ 
+medianOfThree 1 3 0
+getArray
+ 

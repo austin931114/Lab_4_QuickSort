@@ -1,0 +1,136 @@
+createArray 20 False
+addToArray 9 False
+addToArray 8 False
+addToArray 7 False
+addToArray 6 False
+addToArray 5 False
+addToArray 4 False
+addToArray 3 False
+addToArray 2 False
+addToArray 1 False
+addToArray 0 False
+getArray
+ 
+sortAll
+getArray
+ 
+createArray 20 False
+addToArray 9 False
+addToArray 8 False
+addToArray 7 False
+addToArray 6 False
+addToArray 5 False
+addToArray 4 False
+addToArray 3 False
+addToArray 2 False
+addToArray 1 False
+addToArray 0 False
+addToArray 9 False
+addToArray 8 False
+addToArray 7 False
+addToArray 6 False
+addToArray 5 False
+addToArray 4 False
+addToArray 3 False
+addToArray 2 False
+addToArray 1 False
+addToArray 0 False
+getArray
+ 
+sortAll
+getArray
+ 
+createArray 20 False
+addToArray 0 False
+addToArray 0 False
+addToArray 0 False
+addToArray 0 False
+addToArray 0 False
+addToArray -1 False
+addToArray 0 False
+addToArray 0 False
+addToArray 0 False
+addToArray 0 False
+addToArray 1 False
+addToArray 0 False
+addToArray 0 False
+addToArray 0 False
+addToArray 0 False
+addToArray 1 False
+addToArray 0 False
+addToArray 0 False
+addToArray -1 False
+addToArray 0 False
+getArray
+ 
+sortAll
+getArray
+ 
+createArray 30 False
+addToArray 30 False
+addToArray 29 False
+addToArray 28 False
+addToArray 27 False
+addToArray 26 False
+addToArray 25 False
+addToArray 24 False
+addToArray 23 False
+addToArray 22 False
+addToArray 21 False
+addToArray 20 False
+addToArray 19 False
+addToArray 18 False
+addToArray 17 False
+addToArray 16 False
+addToArray 15 False
+addToArray 14 False
+addToArray 13 False
+addToArray 12 False
+addToArray 11 False
+addToArray 10 False
+addToArray 9 False
+addToArray 8 False
+addToArray 7 False
+addToArray 6 False
+addToArray 5 False
+addToArray 4 False
+addToArray 3 False
+addToArray 2 False
+addToArray 1 False
+getArray
+ 
+sortAll
+getArray
+ 
+createArray 10 False
+addToArray 1  False
+addToArray 2 False
+addToArray 3 False
+addToArray 4 False
+addToArray 1 False
+addToArray 5 False
+addToArray 6 False
+addToArray 7 False
+addToArray 8 False
+addToArray 9 False
+getArray
+ 
+sortAll
+getArray
+ 
+createArray 10 False
+addToArray 4 False
+addToArray 6 False
+addToArray 2 False
+addToArray 1 False
+addToArray 9 False
+addToArray 5 False
+addToArray 3 False
+addToArray 8 False
+addToArray 7 False
+addToArray 9 False
+getArray
+ 
+sortAll
+getArray
+ 
