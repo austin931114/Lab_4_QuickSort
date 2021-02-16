@@ -99,7 +99,7 @@ using namespace std;
 			temp.append(arrayValue);
 			temp.append(comma);
 			}
-			
+
 		return temp;
 	}
 
@@ -172,7 +172,7 @@ using namespace std;
 		}
 		
 		delete [] myArray;
-		myArray = NULL;
+		myArray = 0;
 
 
 		return;
