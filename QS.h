@@ -17,7 +17,7 @@ public:
 	*
 	* Does nothing if the array is empty.
 	*/
-	
+	void sort(int left, int right);
 	void sortAll();
 
 	/*

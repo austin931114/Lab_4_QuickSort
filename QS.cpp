@@ -4,6 +4,20 @@
 #include "QS.h"
 using namespace std;
 
+
+
+void QS::sort(int left, int right) {
+	if ((right - left) < 1) {
+		return;
+	}
+
+	int temp = medianOfThree(left, right);
+	temp = partition(left, right, temp);			
+	sort(left + 1, temp);
+	sort(left, temp - 1);
+
+	return;
+}
 	/*
 	* sortAll()
 	*
@@ -13,6 +27,11 @@ using namespace std;
 	* Does nothing if the array is empty.
 	*/
 	void QS::sortAll() {
+		if (valueSize == 0) {
+			return;
+		}
+		sort(0, valueSize - 1);
+
 		return;
 	}
 
@@ -42,9 +61,10 @@ using namespace std;
 	*		the index of the pivot (middle index); -1 if provided with invalid input
 	*/
 	int QS::medianOfThree(int left, int right) {
-		if (left >= right) {
+		if (left >= right || valueSize == 0 || left < 0 || right < 0 || (right >= valueSize)) {
 			return -1;
 		}
+
 		int middle;
 		middle = (left + right)/2;
 
@@ -96,9 +116,44 @@ using namespace std;
 	*		the pivot's ending index after the partition completes; -1 if
 	* 		provided with bad input
 	*/
-	int QS::partition(int left, int right, int pivotIndex)
-	{
-		return 0;
+	int QS::partition(int left, int right, int pivotIndex) {
+		if (left >= right || valueSize == 0 || left < 0 || right < 0 
+		|| (right >= valueSize) || (pivotIndex > right)) {
+			return -1;
+		}
+
+		int temp = myArray[pivotIndex];
+		myArray[pivotIndex] = myArray[left];
+		myArray[left] = temp;
+		int up = left + 1;
+		int down = right;
+
+		do {
+			/* All items in table[first] through table[up - 1] <= table[first] 
+				 All items in table[down + 1] through table[last - 1] > table[first]
+			*/
+			while ((myArray[up] <= myArray[left]) && (up < right)) {
+				up++; // Assert: up equals last - 1 or table[up] > table[left]
+			}
+			while ((myArray[down] > myArray[left]) && (down > left)) {
+				down--; // Assert: down equals first or table[down] <= table[left]
+			}
+			if (up < down) { // if up is to the left of down,
+				int temp1;
+				temp1 = myArray[up];
+				myArray[up] = myArray[down];
+				myArray[down] = temp1; 
+			}
+		}while (up < down);
+
+		// Exchange table[left] and table[down] thus putting the 
+		// pivot value where it belongs. 
+		// Return position of pivot
+		int temp2 = myArray[left];
+		myArray[left] = myArray[down];
+		myArray[down] = temp2; 
+
+		return down;
 	}
 
 	/*
@@ -160,7 +215,7 @@ using namespace std;
 		if (myArray != NULL) {
 				myArray[valueSize] = value;
 				// cout << "haha" << myArray[valueSize] << endl;
-				valueSize++;
+				valueSize++; // Count how many number added to the array
 		}
 
 				return true;
