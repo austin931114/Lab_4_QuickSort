@@ -7,14 +7,14 @@ using namespace std;
 
 
 void QS::sort(int left, int right) {
-	if ((right - left) < 1) {
+	if ((right - left) < 1) { // everything on the left is smaller than the thing on the right
 		return;
 	}
 
-	int temp = medianOfThree(left, right);
-	temp = partition(left, right, temp);			
-	sort(left + 1, temp);
-	sort(left, temp - 1);
+	int pivot = medianOfThree(left, right);
+	pivot = partition(left, right, pivot);			
+	sort(left , pivot - 1); // sort from pivot to left
+	sort(pivot + 1, right); // sort from puvot to right
 
 	return;
 }
@@ -129,16 +129,16 @@ void QS::sort(int left, int right) {
 		int down = right;
 
 		do {
-			/* All items in table[first] through table[up - 1] <= table[first] 
-				 All items in table[down + 1] through table[last - 1] > table[first]
+			/* All items in myArray[first] through myArray[up - 1] <= myArray[first] 
+				 All items in myArray[down + 1] through myArray[last - 1] > myArray[first]
 			*/
 			while ((myArray[up] <= myArray[left]) && (up < right)) {
-				up++; // Assert: up equals last - 1 or table[up] > table[left]
+				up++; // Assert: up equals last - 1 or myArray[up] > myArray[left]
 			}
 			while ((myArray[down] > myArray[left]) && (down > left)) {
-				down--; // Assert: down equals first or table[down] <= table[left]
+				down--; // Assert: down equals first or myArray[down] <= myArray[left]
 			}
-			if (up < down) { // if up is to the left of down,
+			if (up < down) { // if up is to the left of down (myArray[up] > myArray[down])(always by the while loop)
 				int temp1;
 				temp1 = myArray[up];
 				myArray[up] = myArray[down];
@@ -146,7 +146,7 @@ void QS::sort(int left, int right) {
 			}
 		}while (up < down);
 
-		// Exchange table[left] and table[down] thus putting the 
+		// Exchange myArray[left] and myArray[down] thus putting the (myArray[down] < myArray[left])
 		// pivot value where it belongs. 
 		// Return position of pivot
 		int temp2 = myArray[left];
@@ -241,7 +241,7 @@ void QS::sort(int left, int right) {
 
 		delete [] myArray;
 		myArray = new int[capacity];
-		valueSize = 0;
+		valueSize = 0; // reset what has been add to the array
 
 		for (int i = 0; i < myArrayLength; ++i) {
 			myArray[i] = -9999;
