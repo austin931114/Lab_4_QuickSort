@@ -8,8 +8,8 @@ using namespace std;
 
 void QS::sort(int left, int right) {
 	if ((right - left) < 1) { // everything on the left is smaller than the thing on the right
-		return;
-	}
+			return;               // pivot is next to left or right
+	}												
 
 	int pivot = medianOfThree(left, right);
 	pivot = partition(left, right, pivot);			
